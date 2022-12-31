@@ -1,0 +1,93 @@
+/* elementos base */
+:root{
+    --vermelho:#E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+/* fim elementos base */
+/* cabeçalho/menu */
+header .container{
+    border: 1px solid black;
+}
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin: 0 0 0 5px;
+}
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin: auto 10px auto 0;
+    padding: 10px;
+}
+header nav a:hover{
+    color: white;
+    background-color: #E50914;
+    border-radius: 8px;
+}
+ header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* fim cabeçalho/menu */
+/* filme principal */
+.main-movie{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)100%), url(../img/capa-main-movie.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main-movie .container{
+    margin-left: 30px;
+    width: 60%;
+}
+.main-movie .descricao{
+    margin: 10px 0 0 0;
+    margin: 0 0 40px 0;
+}
+.title{
+    margin: 15% 0 0 0;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bt{
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 15px;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+    transition: 0.7s ease all;
+}
+.bt:hover{
+    background-color: white;
+    color: var(--vermelho);
+}
+.bt i{
+    margin: 0 8px 0 0;
+}
+.box-movie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-filmes{
+    margin: 2px 0 0 0;
+}
